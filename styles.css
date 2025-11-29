@@ -469,3 +469,12 @@ textarea:focus {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
+
+/* Fix navigation anchor scroll offset */
+#about,
+#features,
+#how-it-works,
+#partners,
+#contact {
+  scroll-margin-top: 6rem;
+}
