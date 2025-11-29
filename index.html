@@ -308,7 +308,7 @@
             This simple form is just a placeholder. In the real platform, this would be part of our secure sign-up or
             contact process.
           </p>
-          <form>
+          <form id="interest-form">
             <label for="name">Name (optional)</label>
             <input type="text" id="name" name="name" placeholder="You can leave this blank" />
 
@@ -328,9 +328,17 @@
             <label for="message">Message (optional)</label>
             <textarea id="message" name="message" rows="3" placeholder="Share feedback, ideas, or questions..."></textarea>
 
-            <button type="button" class="btn primary-btn full-width">Prototype - button disabled</button>
+            <button type="submit" class="btn primary-btn full-width">Prototype - button disabled</button>
+             Send message
+          </button>
           </form>
-        </div>
+          
+        </div id="form-success" class="form-success" style="display: none;">
+         <h3>Thank you!</h3>
+         <p>
+           Your message has been received as part of the Sa3edni prototype.
+           In the full platform, this form will securely send your details to our team.
+         </p>
       </div>
     </section>
   </main>
@@ -348,5 +356,19 @@
       </p>
     </div>
   </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('interest-form');
+    var successBox = document.getElementById('form-success');
+
+    if (form && successBox) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // don't actually send anywhere
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+      });
+    }
+  });
+</script>
 </body>
 </html>
