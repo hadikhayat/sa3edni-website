@@ -505,3 +505,19 @@ textarea:focus {
     font-size: 2rem;
   }
 }
+.form-success {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #e9f8eb;
+    border: 1px solid #b8e0c5;
+    color: #064420;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.form-success h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
