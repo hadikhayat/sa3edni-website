@@ -311,7 +311,10 @@
             secure sign-up or contact process.
           </p>
 
-          <form id="interest-form" class="contact-form">
+          <form 
+            id="interest-form" 
+            class="contact-form"
+            onsubmit="event.preventDefault(); this.style.display='none'; document.getElementById('form-success').style.display='block';"
             <label for="name">Name (optional)</label>
             <input type="text" id="name" name="name" placeholder="You can leave this blank" />
 
@@ -363,19 +366,6 @@
       </p>
     </div>
   </footer>
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var form = document.getElementById('interest-form');
-        var successBox = document.getElementById('form-success');
 
-        if (form && successBox) {
-          form.addEventListener('submit', function (e) {
-            e.preventDefault(); // prevent page reload
-            form.style.display = 'none';
-            successBox.style.display = 'block';
-          });
-        }
-      });
-    </script>
   </body>
 </html>
