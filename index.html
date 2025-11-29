@@ -288,27 +288,30 @@
       </div>
     </section>
 
-    <!-- Contact / Get Involved -->
+       <!-- Contact / Get Involved Section -->
     <section id="contact" class="section contact">
-      <div class="container contact-inner">
-        <div>
-          <h2>Stay informed or collaborate with us</h2>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Get involved with Sa3edni</h2>
           <p>
-            Sa3edni is currently a student-led project at LAU in the Project Management course. We are validating the
-            need for the platform, collecting feedback, and exploring real-world partnerships.
+            We are currently in a research and prototype phase as part of the MGT401 Project Management
+            course at the Lebanese American University (LAU). If you are a student, staff member,
+            mental-health professional, NGO, or simply interested in the idea, we’d love to hear from you.
           </p>
           <p>
-            If you are a student, staff member, mental-health professional, NGO representative, or simply interested in
-            the topic, we'd be happy to hear from you.
+            This form does not send data to a real system yet. It is only used to demonstrate how the
+            future sign-up or contact process could look and feel.
           </p>
         </div>
+
         <div class="contact-card">
           <h3>Express your interest</h3>
           <p class="contact-note">
-            This simple form is just a placeholder. In the real platform, this would be part of our secure sign-up or
-            contact process.
+            This simple form is just a placeholder. In the real platform, this would be part of our
+            secure sign-up or contact process.
           </p>
-          <form id="interest-form">
+
+          <form id="interest-form" class="contact-form">
             <label for="name">Name (optional)</label>
             <input type="text" id="name" name="name" placeholder="You can leave this blank" />
 
@@ -326,21 +329,25 @@
             </select>
 
             <label for="message">Message (optional)</label>
-            <textarea id="message" name="message" rows="3" placeholder="Share feedback, ideas, or questions..."></textarea>
+            <textarea id="message" name="message" rows="3"
+                      placeholder="Share feedback, ideas, or questions..."></textarea>
 
-            <button type="submit" class="btn primary-btn full-width">Prototype - button disabled</button>
-             Send message
-          </button>
+            <button type="submit" class="btn primary-btn full-width">
+              Send message
+            </button>
           </form>
-          
-        </div id="form-success" class="form-success" style="display: none;">
-         <h3>Thank you!</h3>
-         <p>
-           Your message has been received as part of the Sa3edni prototype.
-           In the full platform, this form will securely send your details to our team.
-         </p>
+
+          <div id="form-success" class="form-success" style="display: none;">
+            <h3>Thank you!</h3>
+            <p>
+              Your message has been received as part of the Sa3edni prototype. In the full platform,
+              this form will securely send your details to our team.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -356,19 +363,19 @@
       </p>
     </div>
   </footer>
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var form = document.getElementById('interest-form');
-    var successBox = document.getElementById('form-success');
+<script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('interest-form');
+        var successBox = document.getElementById('form-success');
 
-    if (form && successBox) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault(); // don't actually send anywhere
-        form.style.display = 'none';
-        successBox.style.display = 'block';
+        if (form && successBox) {
+          form.addEventListener('submit', function (e) {
+            e.preventDefault(); // prevent page reload
+            form.style.display = 'none';
+            successBox.style.display = 'block';
+          });
+        }
       });
-    }
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>
