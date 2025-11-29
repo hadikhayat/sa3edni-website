@@ -343,58 +343,6 @@ body {
   margin-bottom: 0.4rem;
 }
 
-/* Partners */
-
-.partners {
-  background-color: #f5f3ff0c;
-}
-
-.partner-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.3rem;
-  margin-top: 1.5rem;
-}
-
-.partner-card {
-  background-color: #ffffff;
-  border-radius: var(--radius-md);
-  padding: 1.1rem 1.2rem;
-  border: 1px solid var(--border-soft);
-}
-
-/* Team */
-
-.team {
-  background-color: #f9fafb;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.3rem;
-  margin-top: 1.7rem;
-}
-
-.team-card {
-  background-color: #ffffff;
-  border-radius: var(--radius-md);
-  padding: 1.1rem 1.2rem 1.3rem;
-  border: 1px solid var(--border-soft);
-}
-
-.team-role {
-  margin: 0.15rem 0 0.5rem;
-  font-size: 0.9rem;
-  color: var(--green-main);
-  font-weight: 500;
-}
-
-.team-bio {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
 /* Contact */
 
 .contact-inner {
