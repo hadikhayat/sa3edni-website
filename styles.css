@@ -519,3 +519,12 @@ textarea:focus {
 #contact {
   scroll-margin-top: 6rem;
 }
+
+/* Force proper hover style for Book a session button */
+.main-nav a.nav-cta-button:hover {
+    background: #075c2f !important;
+    border-color: #075c2f !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
