@@ -97,28 +97,31 @@ body {
 
 /* --- Navbar CTA Button (Green) --- */
 .nav-cta-button {
-  background-color: #064e3b;          /* BetterHelp-style green */
-  color: #ffffff;
-  padding: 0.55rem 1.4rem;            /* more space around text */
+  background-color: #064e3b;          /* main green */
+  color: #ffffff !important;          /* force white text always */
+  padding: 0.55rem 1.4rem;
   border-radius: 999px;
   font-weight: 600;
   border: none;
-  box-shadow: 0 6px 16px rgba(6, 78, 59, 0.25);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(6, 78, 59, 0.18);
   transition: all 0.25s ease;
 }
 
 /* Hover effect */
 .nav-cta-button:hover {
-  background-color: #046144;          /* darker green hover */
-  transform: translateY(-1px);        /* slight lift */
-  box-shadow: 0 10px 24px rgba(6, 78, 59, 0.30);
-  color: #ffffff;
+  background-color: #046144;          /* darker green */
+  color: #ffffff !important;          /* keep text white */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(6, 78, 59, 0.28);
 }
 
-/* When on booking page */
+/* Active / current page (on booking.html) */
 .nav-cta-button.active {
   background-color: #065f46;
-  color: #ffffff;
+  color: #ffffff !important;
+  box-shadow: none;
 }
 
 /* Hero */
