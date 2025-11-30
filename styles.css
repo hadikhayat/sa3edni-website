@@ -112,7 +112,7 @@ body {
 /* Hover effect */
 .nav-cta-button:hover {
     background: #075c2f;   /* Slightly brighter green */
-    border-color: #075c2f;
+    border-color: #0a5a2b;
     color: #ffffff !important;
     transform: translateY(-1px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
