@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a session | Sa3edni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Sa3edni is a Lebanese mental-health platform concept that connects users with licensed psychologists and psychiatrists from trusted hospitals and universities."
+  />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-sa3edni.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-area">
+        <img src="assets/logo-sa3edni.png" alt="Sa3edni logo" class="logo" />
+        <span class="logo-text">Sa3edni</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="index.html#how-it-works">How it works</a></li>
+    <li><a href="booking.html" class="active">Book a session</a></li>
+    <li><a href="chat.html">Live chat</a></li>
+    <li><a href="index.html#partners">Partners</a></li>
+    <li><a href="index.html#contact">Get involved</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <main>
+     <section class="section">
+    <div class="container booking-layout">
+      <div class="booking-text">
+        <h1>Book a session</h1>
+        <p>
+          This page shows how booking could work in the full Sa3edni platform.
+          You can browse professionals, choose your preferences, and request a
+          session. For now, this is a visual prototype only.
+        </p>
+
+        <h2>Available professionals (example)</h2>
+
+        <div class="booking-pro-list">
+          <article class="card">
+            <h3>Dr. Jana Rouhana</h3>
+            <p>Clinical psychologist · Anxiety, stress, student life</p>
+            <p><strong>Languages:</strong> Arabic, English</p>
+            <p><strong>Location:</strong> Beirut · Online sessions available</p>
+          </article>
+
+          <article class="card">
+            <h3>Dr. Karim Haddad</h3>
+            <p>Psychiatrist · Mood disorders, medication follow-up</p>
+            <p><strong>Languages:</strong> Arabic, French, English</p>
+            <p><strong>Location:</strong> Beirut · Hospital-affiliated</p>
+          </article>
+
+          <article class="card">
+            <h3>Dr. Nour Chami</h3>
+            <p>Psychologist · Trauma, grief, and family issues</p>
+            <p><strong>Languages:</strong> Arabic, English</p>
+            <p><strong>Location:</strong> Saida · Online sessions available</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="booking-form">
+        <h2>Session details (prototype)</h2>
+        <form>
+          <label for="pro">Choose a professional</label>
+          <select id="pro" name="pro">
+            <option value="">Select one</option>
+            <option>Dr. Jana Rouhana</option>
+            <option>Dr. Karim Haddad</option>
+            <option>Dr. Nour Chami</option>
+          </select>
+
+          <label for="type">Session type</label>
+          <select id="type" name="type">
+            <option value="">Select one</option>
+            <option>Video session</option>
+            <option>Audio session</option>
+            <option>Chat-based session</option>
+          </select>
+
+          <label for="day">Preferred day</label>
+          <input type="date" id="day" name="day" />
+
+          <label for="time">Preferred time</label>
+          <input type="time" id="time" name="time" />
+
+          <label for="note">Short note (optional)</label>
+          <textarea id="note" name="note" rows="3"
+            placeholder="Example: I’m a student struggling with exams and sleep."></textarea>
+
+          <button type="button" class="btn primary-btn full-width">
+            Request session (prototype)
+          </button>
+        </form>
+        <p class="form-note">
+          This page is for demonstration only. Requests are not actually sent or
+          stored in a real system yet.
+        </p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        Sa3edni - A Mental-health platform concept developed at the Lebanese American University (LAU) as part of
+        <strong>MGT401 - Project Management</strong>.
+      </p>
+      <p class="footer-small">
+        Course instructor: <strong>Dr. Samar Aad</strong>. This website is a prototype for academic purposes and does not
+        provide medical, psychological, or emergency services. If you are in crisis, please contact a local emergency
+        number or a trusted hotline.
+      </p>
+    </div>
+  </footer>
+
+  </body>
+</html>
