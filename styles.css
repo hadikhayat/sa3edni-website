@@ -95,8 +95,21 @@ body {
   background-color: rgba(209, 250, 229, 0.5);
 }
 
-.nav-cta {
-  border: 1px solid rgba(45, 106, 79, 0.3);
+/* --- Navbar CTA Button (Green) --- */
+.nav-cta-button {
+  background: #064420;
+  color: #ffffff !important;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid #064420;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-cta-button:hover {
+  background: #0a5a2b;
+  border-color: #0a5a2b;
+  color: #ffffff !important;
 }
 
 /* Hero */
