@@ -111,10 +111,11 @@ body {
 
 /* Hover effect */
 .nav-cta-button:hover {
-  background-color: #046144;          /* darker green */
-  color: #ffffff !important;          /* keep text white */
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(6, 78, 59, 0.28);
+    background: #075c2f;   /* Slightly brighter green */
+    border-color: #075c2f;
+    color: #ffffff !important;
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Active / current page (on booking.html) */
